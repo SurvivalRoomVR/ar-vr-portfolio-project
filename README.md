@@ -18,6 +18,7 @@
 <h2>
     contact with us<img src="https://github.com/SurvivalRoomVR/ar-vr-portfolio-project/blob/main/img/Handshake.gif" height="32px">
 </h2>
+
 Victor Paz
 | [<img src="https://github.com/SurvivalRoomVR/ar-vr-portfolio-project/blob/main/img/GitHub.png" alt="Github logo" width="34">](https://github.com/VMP1312) | [<img src="https://github.com/SurvivalRoomVR/ar-vr-portfolio-project/blob/main/img/email.png" alt="email logo" height="32">](mailto:1555@holbertonschool.com) | [<img src="https://github.com/SurvivalRoomVR/ar-vr-portfolio-project/blob/main/img/linkedin-icon.png" alt="linkind logo" width="32">](https://www.linkedin.com/in/victor-paz-11b56b84/) | [<img src="https://github.com/SurvivalRoomVR/ar-vr-portfolio-project/blob/main/img/twitter.png" alt="Twitter Logo" width="30">](https://twitter.com/VictorP1312) |
 |:---:|:---:|:---:|:---:|
