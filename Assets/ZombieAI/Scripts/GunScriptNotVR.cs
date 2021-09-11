@@ -15,6 +15,7 @@ public class GunScriptNotVR : MonoBehaviour
     public Transform shootingPoint;
     private float nextTimeToFire = 0f;
     public Pool fleshBulletPool;
+    public Pool GenericBulleHittPool;
     // Start is called before the first frame update
     void Start()
     {
@@ -36,6 +37,7 @@ public class GunScriptNotVR : MonoBehaviour
     {
         muzzleFlash.Stop();
         muzzleFlash.Play();
+        // audioSource.PlayOneShot(fire);
         // animator.SetTrigger("Fire");
         animator.CrossFadeInFixedTime("Fire", 0.1f);
         RaycastHit hit;
@@ -55,9 +57,15 @@ public class GunScriptNotVR : MonoBehaviour
             }
             else
             {
-                GameObject impactGO = Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal));
-                Destroy(impactGO, 1f);
+                // GameObject impactGO = Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal));
+                // Destroy(impactGO, 1f);
+                GenericBulleHittPool.ActivateNext(hit.point, Quaternion.LookRotation(hit.normal));
+                // audioSource.PlayOneShot(genericHit);
             }
         }
     }
+
+    public AudioSource audioSource;
+    public AudioClip fire;
+    public AudioClip genericHit;
 }

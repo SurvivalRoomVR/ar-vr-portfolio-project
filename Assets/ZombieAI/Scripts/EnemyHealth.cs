@@ -9,12 +9,14 @@ public class EnemyHealth : MonoBehaviour
     public EnemyHealth parentReference;
     public float damageMultiplier = 1.0f;
     public EnemyAI enemyAI;
-    
+    public AudioSource audioSource;
+    public AudioClip bulletImpact;
+
 
     public delegate void OnZeroHealthHandler();
     public event OnZeroHealthHandler OnZeroHealth;
 
-    void OnEnable() 
+    void OnEnable()
     {
         value = initailValue;
     }
@@ -38,5 +40,7 @@ public class EnemyHealth : MonoBehaviour
             enemyAI.aiState = AIState.chasing;
             enemyAI.animator.SetBool("Chasing", true);
         }
+        if (audioSource && bulletImpact)
+            audioSource.PlayOneShot(bulletImpact);
     }
 }
