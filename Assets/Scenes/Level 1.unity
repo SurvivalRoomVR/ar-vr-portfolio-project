@@ -2486,6 +2486,7 @@ MonoBehaviour:
   loseCanvas: {fileID: 1556323681}
   player: {fileID: 0}
   audioMixer: {fileID: 24100000, guid: 97d2cc5e51536ab4686331f2f2574600, type: 2}
+  currentTime: 0
 --- !u!1 &781516838 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100004, guid: a4cabfc647d3e0641a915c6ca627a680,
