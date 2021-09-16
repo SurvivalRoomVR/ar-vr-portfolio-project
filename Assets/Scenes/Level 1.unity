@@ -24882,7 +24882,7 @@ GameObject:
   - component: {fileID: 8443141585690328573}
   m_Layer: 0
   m_Name: FleshBulletImpactPool
-  m_TagString: Untagged
+  m_TagString: FleshImpactPool
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
