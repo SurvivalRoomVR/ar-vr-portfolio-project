@@ -284,7 +284,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   distanceThreshold: 8
-  speed: 0.5
+  speed: 0.8
   aiState: 0
   animator: {fileID: 2115838104678298759}
   attackThreshold: 1.5

@@ -16,6 +16,14 @@ public class EnemyHealth : MonoBehaviour
     public delegate void OnZeroHealthHandler();
     public event OnZeroHealthHandler OnZeroHealth;
 
+
+    private Pool fleshImpactEffect;
+
+    void Start()
+    {
+        fleshImpactEffect = GameObject.FindGameObjectWithTag("FleshImpactPool").GetComponent<Pool>(); ;
+    }
+
     void OnEnable()
     {
         value = initailValue;
@@ -42,5 +50,11 @@ public class EnemyHealth : MonoBehaviour
         }
         if (audioSource && bulletImpact)
             audioSource.PlayOneShot(bulletImpact);
+    }
+
+    public void TakeDamage(float damage, RaycastHit hit)
+    {
+        TakeDamage(damage);
+        fleshImpactEffect.ActivateNext(hit.point, Quaternion.LookRotation(hit.normal));
     }
 }

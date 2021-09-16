@@ -52,8 +52,11 @@ public class GunScriptNotVR : MonoBehaviour
             {
                 // Instantiate(fleshBulletHole, hit.point, Quaternion.LookRotation(hit.normal), health.gameObject.transform);
                 // Instantiate(fleshBulletHole, hit.point, Quaternion.LookRotation(hit.normal));
-                fleshBulletPool.ActivateNext(hit.point, Quaternion.LookRotation(hit.normal));
-                health.TakeDamage(damage);
+
+                // fleshBulletPool.ActivateNext(hit.point, Quaternion.LookRotation(hit.normal));
+                // health.TakeDamage(damage);
+
+                health.TakeDamage(damage, hit);
             }
             else
             {
