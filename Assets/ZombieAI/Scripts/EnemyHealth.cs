@@ -48,8 +48,8 @@ public class EnemyHealth : MonoBehaviour
             enemyAI.aiState = AIState.chasing;
             enemyAI.animator.SetBool("Chasing", true);
         }
-        if (audioSource && bulletImpact)
-            audioSource.PlayOneShot(bulletImpact);
+        // if (audioSource && bulletImpact)
+        //     audioSource.PlayOneShot(bulletImpact);
     }
 
     public void TakeDamage(float damage, RaycastHit hit)

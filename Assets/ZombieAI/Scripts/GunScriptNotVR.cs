@@ -37,7 +37,7 @@ public class GunScriptNotVR : MonoBehaviour
     {
         muzzleFlash.Stop();
         muzzleFlash.Play();
-        // audioSource.PlayOneShot(fire);
+        audioSource.PlayOneShot(fire);
         // animator.SetTrigger("Fire");
         animator.CrossFadeInFixedTime("Fire", 0.1f);
         RaycastHit hit;
